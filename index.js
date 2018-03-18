@@ -17,6 +17,20 @@ const root = {
             text: 'Chung o day',
             title: 'This is hacker new Item'
         }
+    },
+    user: () => {
+        return {
+            firstName: 'Jane',
+            lastName: 'Doe',
+            emails: [
+                {
+                    email: 'zrmedia9@gmail.com'
+                },
+                {
+                    email: 'ducchungtx@gmail.com'
+                }
+            ]
+        }
     }
 };
 

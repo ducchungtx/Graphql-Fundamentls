@@ -9,8 +9,20 @@ const schema = buildSchema(`
         title: String
         deleted: Boolean
     }
+
+    type Email {
+        email: String!
+    }
+
+    type User {
+        firstName: String!
+        lastName: String!
+        emails: [Email]
+    }
+
     type Query {
         item: HackerNewsItem
+        user: User
     }
 `);
 
